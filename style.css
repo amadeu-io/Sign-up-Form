@@ -1,14 +1,18 @@
 /* generic styles */
 
+:root {
+    --blue-gradient: linear-gradient(153deg, rgba(96,65,255,1) 19%, rgba(44,186,255,1) 100%);
+    --green-gradient: linear-gradient(153deg, rgb(96, 211, 85) 19%, rgba(0,193,255,1) 100%);
+    --orange-gradient: linear-gradient(153deg, rgba(228,77,77,1) 19%, rgba(255,248,0,1) 100%);
+}
+
 body {
     height: 100vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     font-family: 'Roboto', sans-serif;
-    background: rgb(96,65,255);
-    background: linear-gradient(153deg, rgba(96,65,255,1) 19%, rgba(44,186,255,1) 100%);
-    
+    background: var(--blue-gradient); /*default*/
 }
 
 /* title side */
