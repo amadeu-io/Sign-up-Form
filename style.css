@@ -36,6 +36,8 @@ h1 {
 
 .themes {
     display: flex;
+    position: relative;
+    top: -120px;
 }
 
 .themes > *{
@@ -44,24 +46,25 @@ h1 {
     margin: 0 3px;
     border-radius: 50%;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
-    position: relative;
-    top: -120px;
 }
 
-.blue {
-    border: 3px solid rgb(33, 33, 33);
+#blue {
     background: rgb(96,65,255);
     background: linear-gradient(153deg, rgba(96,65,255,1) 19%, rgba(44,186,255,1) 100%);
 }
 
-.green {
+#green {
     background: rgb(106,255,92);
     background: linear-gradient(153deg, rgba(106,255,92,1) 19%, rgba(0,193,255,1) 100%);
 }
 
-.orange {
+#orange {
     background: rgb(255,99,60);
     background: linear-gradient(153deg, rgba(255,99,60,1) 19%, rgba(255,239,0,1) 100%);
+}
+
+.theme-border {
+    border: 3px solid rgb(33, 33, 33);
 }
 
 .credits {
