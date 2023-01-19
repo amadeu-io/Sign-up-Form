@@ -1,9 +1,12 @@
 /* generic styles */
 
 :root {
-    --blue-gradient: linear-gradient(153deg, rgba(96,65,255,1) 19%, rgba(44,186,255,1) 100%);
-    --green-gradient: linear-gradient(153deg, rgb(96, 211, 85) 19%, rgba(0,193,255,1) 100%);
-    --orange-gradient: linear-gradient(153deg, rgba(228,77,77,1) 19%, rgba(255,248,0,1) 100%);
+    --blue-gradient: linear-gradient(153deg, rgb(96,65,255) 19%, rgb(44,186,255) 100%);
+    --green-gradient: linear-gradient(153deg, rgb(96, 211, 85) 19%, rgb(0,193,255) 100%);
+    --orange-gradient: linear-gradient(153deg, rgb(192, 64, 64) 19%, rgb(238, 230, 0) 100%);
+    --blue-solid: rgb(0, 170, 255);
+    --green-solid: rgb(85, 211, 156);
+    --orange-solid: rgb(243, 128, 57);
 }
 
 body {
@@ -40,30 +43,27 @@ h1 {
     top: -120px;
 }
 
-.themes > *{
-    width: 30px;
-    height: 30px;
+#blue, #green, #orange{
+    width: 27px;
+    height: 27px;
     margin: 0 3px;
     border-radius: 50%;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
 }
 
 #blue {
-    background: rgb(96,65,255);
-    background: linear-gradient(153deg, rgba(96,65,255,1) 19%, rgba(44,186,255,1) 100%);
+    background: var(--blue-gradient);
 }
 
 #green {
-    background: rgb(106,255,92);
-    background: linear-gradient(153deg, rgba(106,255,92,1) 19%, rgba(0,193,255,1) 100%);
+    background: var(--green-gradient);
 }
 
 #orange {
-    background: rgb(255,99,60);
-    background: linear-gradient(153deg, rgba(255,99,60,1) 19%, rgba(255,239,0,1) 100%);
+    background: var(--orange-gradient);
 }
 
-.theme-border {
+.theme-border { /* this styles the selected theme button*/
     border: 3px solid rgb(33, 33, 33);
 }
 
@@ -149,7 +149,7 @@ button {
     width: 200px;
     height: 42px;
     border: 0;
-    background-color: #0091ff;
+    background-color: var(--blue-solid);
     border-radius: 8px;
     font-size: inherit;
     font-weight: bold;

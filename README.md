@@ -4,6 +4,8 @@ Sign up form 📃
 
 This page is currently being developed.
 
+Why are template literals so awesome?
+
 <b>Potential Improvements:</b> 💪
 
 
