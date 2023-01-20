@@ -18,14 +18,17 @@ body {
     background: var(--blue-gradient); /*default*/
 }
 
+.left-container, .right-container {
+    height: 64vh;
+}
+
 /* title side */
 
 .left-container {
     width: 25vw;
-    height: 80vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -33,8 +36,6 @@ h1 {
     font-size: 70px;
     font-weight: bold;
     color: white;
-    position: fixed;
-    top: 150px;
 }
 
 .theme-buttons {
@@ -42,6 +43,7 @@ h1 {
     grid-template-columns: repeat(3, 35px);
     align-content: space-evenly;
     align-items: center;
+    transform: translate(0, -10px);
 }
 
 #blue, #green, #orange{
@@ -67,11 +69,6 @@ h1 {
     box-shadow: 0 0 0 2.5px rgb(33, 33, 33);
 }
 
-.credits {
-    position: relative;
-    bottom: -270px;
-}
-
 .credits a {
     color: white;
     font-size: 12px;
@@ -82,13 +79,12 @@ h1 {
 .right-container {
     background-color: white;
     width: 45vw;
-    height: 80vh;
     border-radius: 15px;
-    padding: 0 60px;
+    padding: 60px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    font-size: 18px;
+    justify-content: space-between;
+    font-size: 16px;
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.05);
 }
 
@@ -97,20 +93,12 @@ h1 {
 }
 
 .description {
-    height: 100px;
     line-height: 1.5;
 }
 
 h2 {
     font-weight: bold;
-    margin: 9px 0;
-}
-
-.form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: -60px;
+    margin-bottom: 9px;
 }
 
 form {
@@ -120,7 +108,7 @@ form {
 } 
 
 label {
-    margin-bottom: 4px;
+    margin-bottom: 3px;
 }
 
 input {
@@ -138,26 +126,25 @@ input {
 }
 
 .checkout {
-    height: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 #create-account {
+    font-size: inherit;
+    font-weight: bold;
     color: white;
+    background-color: var(--blue-solid);
     width: 200px;
     height: 42px;
     border: 0;
-    background-color: var(--blue-solid);
     border-radius: 8px;
-    font-size: inherit;
-    font-weight: bold;
+    margin-bottom: 20px;
 }
 
 #create-account:hover {
     cursor: pointer;
-    background-color: #0085eb;
+    background-color: #0085eb;  /*! this needs to be fixed*/
     transition: 0.2s;
-
 }
