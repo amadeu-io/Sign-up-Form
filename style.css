@@ -20,7 +20,7 @@ body {
 
 /* title side */
 
-.left {
+.left-container {
     width: 25vw;
     height: 80vh;
     display: flex;
@@ -37,18 +37,17 @@ h1 {
     top: 150px;
 }
 
-.themes {
-    display: flex;
-    position: relative;
-    top: -120px;
+.theme-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 35px);
+    align-content: space-evenly;
+    align-items: center;
 }
 
 #blue, #green, #orange{
     width: 27px;
     height: 27px;
-    margin: 0 3px;
     border-radius: 50%;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
 }
 
 #blue {
@@ -63,8 +62,9 @@ h1 {
     background: var(--orange-gradient);
 }
 
-.theme-border { /* this styles the selected theme button*/
-    border: 3px solid rgb(33, 33, 33);
+.theme-border { /* this adds border to selected theme button*/
+    /* border: 3px solid rgb(33, 33, 33); */
+    box-shadow: 0 0 0 2.5px rgb(33, 33, 33);
 }
 
 .credits {
@@ -79,7 +79,7 @@ h1 {
 
 /* form side */
 
-.right {
+.right-container {
     background-color: white;
     width: 45vw;
     height: 80vh;
@@ -144,7 +144,7 @@ input {
     justify-content: space-between;
 }
 
-button {
+#create-account {
     color: white;
     width: 200px;
     height: 42px;
@@ -155,7 +155,7 @@ button {
     font-weight: bold;
 }
 
-button:hover {
+#create-account:hover {
     cursor: pointer;
     background-color: #0085eb;
     transition: 0.2s;
