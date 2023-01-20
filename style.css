@@ -16,13 +16,14 @@ body {
 }
 
 .left-container, .right-container {
-    height: 64vh;
+    height: 495px;
 }
 
 /* title side */
 
 .left-container {
     width: 25vw;
+    min-width: 350px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -75,6 +76,8 @@ h1 {
 .right-container {
     background-color: white;
     width: 45vw;
+    min-width: 400px;
+    max-width: 650px;
     border-radius: 15px;
     padding: 60px;
     display: flex;
@@ -95,7 +98,7 @@ h2 {
 
 form {
     display: grid;
-    width: 600px;
+    width: 100%;
     grid-template: repeat(3, 1fr) / repeat(2, 1fr);
 } 
 
@@ -105,7 +108,8 @@ label {
 
 input {
     height: 30px;
-    width: 240px;
+    /* width: 240px; */
+    width: 80%;
     font-size: inherit;
 }
 
