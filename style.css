@@ -4,9 +4,6 @@
     --blue-gradient: linear-gradient(153deg, rgb(96,65,255) 19%, rgb(44,186,255) 100%);
     --green-gradient: linear-gradient(153deg, rgb(96, 211, 85) 19%, rgb(0,193,255) 100%);
     --orange-gradient: linear-gradient(153deg, rgb(192, 64, 64) 19%, rgb(238, 230, 0) 100%);
-    --blue-solid: rgb(0, 170, 255);
-    --green-solid: rgb(85, 211, 156);
-    --orange-solid: rgb(243, 128, 57);
 }
 
 body {
@@ -65,7 +62,6 @@ h1 {
 }
 
 .theme-border { /* this adds border to selected theme button*/
-    /* border: 3px solid rgb(33, 33, 33); */
     box-shadow: 0 0 0 2.5px rgb(33, 33, 33);
 }
 
@@ -86,10 +82,6 @@ h1 {
     justify-content: space-between;
     font-size: 16px;
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.05);
-}
-
-.description, .form, .checkout {
-    border: 0px solid black;
 }
 
 .description {
@@ -132,10 +124,14 @@ input {
 }
 
 #create-account {
+    --darken: 0%;
+    --blue-solid: hsl(200, 100%, calc(50% - var(--darken)));
+    --green-solid: hsl(153, 58%, calc(58% - var(--darken)));
+    --orange-solid: hsl(22, 88%, calc(58% - var(--darken)));
     font-size: inherit;
     font-weight: bold;
     color: white;
-    background-color: var(--blue-solid);
+    background-color: var(--blue-solid); /* default */
     width: 200px;
     height: 42px;
     border: 0;
@@ -143,8 +139,9 @@ input {
     margin-bottom: 20px;
 }
 
+
 #create-account:hover {
     cursor: pointer;
-    background-color: #0085eb;  /*! this needs to be fixed*/
     transition: 0.2s;
+    --darken: 8%;
 }
