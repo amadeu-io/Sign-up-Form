@@ -12,6 +12,8 @@ The layout for the whole page is done mainly with flexbox, specific parts, like 
 
 The 'Create Account' button slightly darkens by 8% on hover. The way this is implemented works generically no matter the theme color, without the need to define 3 new colors, and uses no JS. It defines the button color in hsl() with a '--darken' variable substracted on the lightness. The default value of darken is 0%, and 8% on hover.
 
+The page is not mobile compatible but it does respond well to different desktop resolutions.
+
 btw, why are template literals so awesome? 
 
 <b>Potential Improvements:</b> 💪
