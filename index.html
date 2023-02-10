@@ -46,28 +46,28 @@
                 </div>
                 <div class="input-box">
                     <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name" name="last-name">
+                    <input type="text" id="last-name" name="last-name" minlength="1" maxlength="20" >
                     <div class="last-name validation"><!-- Enter a valid last name --></div>
                 </div>
                 <div class="input-box">
                     <label for="user-email">Email Adress</label>
-                    <input type="email" id="user-email" name="email">
-                    <div class="validation">Enter a valid email</div>
+                    <input type="email" id="user-email" name="email" required>
+                    <div class="validation"><!-- Enter a valid email --></div>
                 </div>
                 <div class="input-box">
                     <label for="user-phone">Phone Number</label>
                     <input type="tel" id="user-phone" name="phone">
-                    <div class="validation">Enter a valid phone number</div>
+                    <div class="validation"><!-- Enter a valid phone number --></div>
                 </div>
-                <div class="input-box">
+                <div class="input-box pass">
                     <label for="user-password">Password</label>
-                    <input type="password" id="user-password" name="password">
-                    <div class="validation">Enter only valid characters</div>
+                    <input type="text" id="user-password" name="password">
+                    <div class="validation" id="help"></div>
                 </div>
-                <div class="input-box">
+                <div class="input-box pass" >
                     <label for="confirm-password">Confirm Password</label>
-                    <input type="password" id="confirm-password">
-                    <div class="validation">Passwords do not match</div>
+                    <input type="text" id="confirm-password">
+                    <div class="validation"><!-- Passwords do not match --></div>
                 </div>
             </form>
         </div>
