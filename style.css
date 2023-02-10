@@ -12,7 +12,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
     font-family: 'Roboto', sans-serif;
-    background: var(--blue-gradient); /*default*/
+    background: var(--blue-gradient); /* default */
 }
 
 .left-container, .right-container {
@@ -41,7 +41,7 @@ h1 {
     grid-template-columns: repeat(3, 35px);
     align-content: space-evenly;
     align-items: center;
-    transform: translate(0, -10px);
+    transform: translate(0, -10px); /* slighly fine tunes position */
 }
 
 #blue, #green, #orange{
@@ -62,7 +62,7 @@ h1 {
     background: var(--orange-gradient);
 }
 
-.theme-border { /* this adds border to selected theme button*/
+.theme-border { /* adds border to selected theme button */
     box-shadow: 0 0 0 2.5px rgb(33, 33, 33);
 }
 
@@ -91,8 +91,7 @@ h1 {
     line-height: 1.5;
 }
 
-/* validation text */
-.validation {
+.validation { /* validation text */
     height: 12px;
     font-size: 12px;
     margin-top: 5px;
@@ -120,7 +119,6 @@ label {
 
 input {
     height: 30px;
-    /* width: 240px; */
     width: 80%;
     font-size: inherit;
     border-radius: 4px;
@@ -133,11 +131,9 @@ input {
     grid-template-rows: 500px 1fr 1fr;
 }
 
-/* focus color adapts to the theme */
 input:focus {
-    --blue-solid: hsl(200, 100%, 50%);
     outline: none;
-    border: 1px solid var(--blue-solid);
+    border: 1px solid hsl(200, 100%, 50%);
 }
 
 .input-box {
@@ -181,7 +177,6 @@ input:focus {
     border-radius: 8px;
     margin-bottom: 20px;
 }
-
 
 #create-account:hover {
     cursor: pointer;
