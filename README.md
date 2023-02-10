@@ -6,7 +6,7 @@ The form has three different themes (blue 🔵, green 🟢 and orange 🟠) that
 
 The form validates all inputs, some validations are more strict, like the password, which has a strength meter that works in real time, as well as a password confirmation checker, and others more permisive, like the name and last name which just require the field not to be empty. The password meter likes length, different types of characters and entropy. It also checks the password is not on a list of commonly used weak passwords such as 'password123456' that would otherwise pass the test.
 
-The inputs aim to make the process user-friendly, showing feedback only on blur, to minimise distractions while the user is entering information, but once blurred an input at least once, the form starts providing a bit more feedback in real time. This behaviour is <a href="https://twitter.com/vponamariov">@vponamariov</a>'s <a href="https://twitter.com/vponamariov/status/1380182211576664067">'Eager Mode'</a>
+The inputs aim to make the process user-friendly, showing feedback only on blur, to minimise distractions while the user is entering information, but once blurred an input at least once, the form starts providing a bit more feedback in real time. This behaviour is <a href="https://twitter.com/vponamariov">@vponamariov</a>'s <a href="https://twitter.com/vponamariov/status/1380182211576664067">'Eager Mode'</a>.
 
 The form has a minimalistic and modern layout, done mainly with flexbox. Specific parts, like the theme buttons and the form, are done with grid. 
 
@@ -22,10 +22,5 @@ btw, why are template literals so awesome?
 - Mobile compatiblilty
 - More strict phone number validation
 - Add a pop up window the explains what makes a password strong according to our strength meter.
-
-<b>Found Bugs:</b> 🪲
-
-
-
 
 by nightrunner4
