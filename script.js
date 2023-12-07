@@ -3,6 +3,21 @@ function countCharacters(str) {
     return str.replace(/\s/g, '').length;
 };
 
+
+/* const idToEl = {}
+const inputNames = [
+    "first-name",
+    "last-name",
+    "email",
+]
+
+inputNames.forEach(name => {
+    inputs[name] = document.getElementById(name)
+});
+
+
+inputs["first-name"].addEventListener("blur", function() { */
+
 // list of some weak passwords
 const commonPasswords = [
     "password",
