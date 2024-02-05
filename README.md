@@ -1,6 +1,6 @@
 Sign up form 📃
 
-<a href='https://amadeu-io.github.io/Sign-up-Form'>👉 Click here to see</a>
+<a href='https://amadeuio.github.io/Sign-up-Form'>👉 Click here to see</a>
 
 The form has three different themes (blue 🔵, green 🟢 and orange 🟠) that can be easily switched with the theme buttons. When a theme button is clicked, a black outer border appears on it to indicate that it's been selected. When doing this, the position of the buttons won't change based on which one is selected, since the border is a shadow emulating an border, which doesn't take any pixel space, leaving the total button size unchanged and therefore not changing the position of the grid children in the grid. There's probably a better method to do this out there.
 
@@ -23,4 +23,4 @@ btw, why are template literals so awesome?
 - More strict phone number validation
 - Add a pop up window the explains what makes a password strong according to our strength meter
 
-by amadeu-io
+by amadeuio
